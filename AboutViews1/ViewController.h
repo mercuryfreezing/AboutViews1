@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *firstName;
+@property (weak, nonatomic) IBOutlet UITextField *lastName;
+
+@property (weak, nonatomic) IBOutlet UILabel *display;
+
+- (IBAction)addFirstName:(UIButton *)sender;
+
+- (IBAction)addLastName:(UIButton *)sender;
 
 @end
 

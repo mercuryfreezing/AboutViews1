@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize firstName, lastName, display;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +25,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addFirstName:(UIButton *)sender {
+
+    display.text = firstName.text;
+}
+
+- (IBAction)addLastName:(UIButton *)sender {
+
+        display.text = lastName.text;
+}
 @end
